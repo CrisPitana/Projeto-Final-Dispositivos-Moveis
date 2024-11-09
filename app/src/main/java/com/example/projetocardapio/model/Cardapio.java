@@ -1,18 +1,27 @@
-package com.example.projetocardapio.models;
+package com.example.projetocardapio.model;
 
-public class Produto {
+public class Cardapio {
+    private int imgprod;
     private String descricao;
     private String categoria;
-    private String tamanho;
-    private Double valor;
+    private String valor;
     private String ingredientes;
 
-    public Produto(String descricao, String categoria, String tamanho, double valor, String ingredientes) {
+    //contrutor
+    public Cardapio(int imgprod, String descricao, String categoria, String valor, String ingredientes) {
+        this.imgprod = imgprod;
         this.descricao = descricao;
         this.categoria = categoria;
-        this.tamanho = tamanho;
         this.valor = valor;
         this.ingredientes = ingredientes;
+    }
+
+    //getters e setters
+    public int getImgprod() {
+        return imgprod;
+    }
+    public void setImgprod(int imgprod) {
+        this.imgprod = imgprod;
     }
 
     public String getDescricao() {
@@ -31,19 +40,11 @@ public class Produto {
         this.categoria = categoria;
     }
 
-    public String getTamanho() {
-        return tamanho;
-    }
-
-    public void setTamanho(String tamanho) {
-        this.tamanho = tamanho;
-    }
-
-    public Double getValor() {
+    public String getValor() {
         return valor;
     }
 
-    public void setValor(Double valor) {
+    public void setValor(String valor) {
         this.valor = valor;
     }
 

@@ -1,4 +1,4 @@
-package com.example.projetocardapio.models;
+package com.example.projetocardapio.model;
 
 public class Cliente {
  private String nome;

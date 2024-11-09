@@ -1,14 +1,14 @@
-package com.example.projetocardapio.models;
+package com.example.projetocardapio.model;
 
 public class Pedido {
-    private Produto itemPedido;
+    private Cardapio itemPedido;
     private Double subTotal;
     private Double valorFrete;
     private Double valorTotal;
     private String status;
     private String obsPedido;
 
-    public Pedido(Produto itemPedido, Double subTotal, Double valorFrete, Double valorTotal, String status, String obsPedido) {
+    public Pedido(Cardapio itemPedido, Double subTotal, Double valorFrete, Double valorTotal, String status, String obsPedido) {
         this.itemPedido = itemPedido;
         this.subTotal = subTotal;
         this.valorFrete = valorFrete;
@@ -17,11 +17,11 @@ public class Pedido {
         this.obsPedido = obsPedido;
     }
 
-    public Produto getItemPedido() {
+    public Cardapio getItemPedido() {
         return itemPedido;
     }
 
-    public void setItemPedido(Produto itemPedido) {
+    public void setItemPedido(Cardapio itemPedido) {
         this.itemPedido = itemPedido;
     }
 

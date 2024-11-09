@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ProjetoCardapio</string>
+    <string name="linhaseparadora">Linha</string>
+
 </resources>
