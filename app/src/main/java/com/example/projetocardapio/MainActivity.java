@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.agua,
                 "Agua 500ml sem gás",
                 "Bebidas",
-                "3,00",
+                "R$ 3,00",
                 null);
         cardapioArrayList.add(produto5);
 
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.coca,
                 "Coca cola lata",
                 "Bebidas",
-                "5,00",
+                "R$ 5,00",
                 null);
         cardapioArrayList.add(produto6);
 
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.cerveja,
                 "Cerveja Bohemia lata 473ml",
                 "Bebidas",
-                "7,00",
+                "R$ 7,00",
                 null);
         cardapioArrayList.add(produto7);
     }
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.limoneto,
                 "H2O Limoneto 500ml",
                 "Bebidas",
-                "5,00",
+                "R$ 5,00",
                 null);
         cardapioArrayList.add(produto);
 

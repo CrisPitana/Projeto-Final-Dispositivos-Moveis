@@ -4,4 +4,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="cinza_90">#FF0F191B</color>
     <color name="laranja_50">#FC7A3A</color>
+    <color name="cinza_60">#FF706C6C</color>
+    <color name="azul_turq">#89FEDB</color>
+    <color name="green50">#e6ffee</color>
+    <color name="orange_90">#FFB8370E</color>
+    <color name="yellow">#FFB8370E</color>
+    <color name="cinza_10">#B4B3B2</color>
 </resources>

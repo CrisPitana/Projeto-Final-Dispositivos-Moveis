@@ -19,7 +19,7 @@
 
         <ImageView
             android:id="@+id/imgproduto"
-            android:layout_width="92dp"
+            android:layout_width="80dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:scaleType="centerCrop" />
@@ -30,11 +30,11 @@
         android:id="@+id/textdescricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:text="Hamburguer kids"
-        android:textColor="@color/cinza_90"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,10 +46,10 @@
         android:id="@+id/textingredientes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="10dp"
         android:text="Pao Hamburguer, Hamburguer carne, bacon, queijo cheddar, maionese gurmet, alface, tomate."
-        android:textColor="@color/cinza_90"
+        android:textColor="#E8EEEF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/cardView"
@@ -59,25 +59,39 @@
         android:id="@+id/textvalor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
         android:lineSpacingExtra="18sp"
         android:text="R$ 30,00"
-        android:textColor="@color/laranja_50"
+        android:textColor="#FBBB40"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textingredientes" />
 
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
-        android:background="@color/black"
+        android:background="@color/cinza_10"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textvalor" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textingredientes"
+        app:srcCompat="@drawable/add3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
