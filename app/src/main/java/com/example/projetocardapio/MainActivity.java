@@ -1,6 +1,9 @@
 package com.example.projetocardapio;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,12 +24,16 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView rvCardapio;
     private CardapioAdapter cardapioAdapter;
     private ArrayList<Cardapio> cardapioArrayList = new ArrayList<>();
+    private ImageView sacola;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
+        sacola = findViewById(R.id.imgSacola);
+        rvCardapio = findViewById(R.id.recyclerView);
 
         //inflar o layout
         binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -48,8 +55,42 @@ public class MainActivity extends AppCompatActivity {
         rvCardapio.setAdapter(cardapioAdapter);
         criarProdutoLote();
         criaProduto();
+
+        // chama evento de click na sacola
+        sacola.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                irParaPedido();
+            }
+        });
+
+        // chama evento adicionar a sacola
+        // aqui precisa melhorar, evento de click sobre cada item, fiz só para demonstrar
+        rvCardapio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IrParaAddPedido();
+            }
+        });
+
+    } // fim oncreate
+
+    // função ir para tela pedido
+    private void irParaPedido() {
+        Intent in = new Intent(this, Pedido.class);
+        startActivity(in);
+        finish();
     }
 
+    // função ir para tela adicionar Pedido
+    private void IrParaAddPedido() {
+        Intent in = new Intent(this, CadastroPedido.class);
+        startActivity(in);
+        finish();
+    }
+
+
+    // função cria produtos manualmente
     private void criarProdutoLote(){
 
         //Burguer
